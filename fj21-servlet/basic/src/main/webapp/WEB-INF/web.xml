@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<display-name>Archetype Created Web Application</display-name>
+
+
+	<!-- index -->
+	<servlet>
+		<servlet-name>MainServlet</servlet-name>
+		<servlet-class>servlet.MainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!-- identifica o inicio e termino do tomcat -->
+	<listener>
+		<listener-class>util.ApplicationContextListener</listener-class>
+	</listener>
+
+
+</web-app>
+
+
